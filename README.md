@@ -8,7 +8,7 @@ This repository contains a full machine learning pipeline to detect fraudulent c
 - **Suspicious Travel Detection**: Flags implausible high-speed travel between transactions.
 - **Imbalanced Data Handling**: Uses SMOTE to address severe class imbalance.
 - **Modeling**: Random Forest and XGBoost for robust fraud classification.
-- **Threshold Optimization**: Precision-Recall curve based threshold selection for better F1-score.
+
 
 ## 🛠️ Tech Stack
 - **Python**
