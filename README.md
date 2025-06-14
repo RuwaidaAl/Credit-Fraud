@@ -20,6 +20,8 @@ The data used for this project is stored locally and includes columns such as:
 - Customer and merchant geolocation
 - Transaction amount and category
 - Demographics (e.g., gender, date of birth)
+  Link to datasset: https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction
+  
 
 ## 📊 Visualizations
 - Gender-based transaction distributions
