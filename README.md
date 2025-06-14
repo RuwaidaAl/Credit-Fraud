@@ -1,32 +1,54 @@
-Credit Card Fraud Detection with Machine Learning
+# Credit Card Fraud Detection with Machine Learning
 
-This project implements a complete pipeline for detecting fraudulent credit card transactions. It leverages powerful classification algorithms and domain-specific features to improve detection accuracy. Key components include:
+This repository contains a full machine learning pipeline to detect fraudulent credit card transactions. It combines geospatial, temporal, and behavioral features with ensemble learning methods to improve detection performance.
 
-🔍 Features:
-Temporal Features: Hour of transaction, day of the week, customer age.
+## 📌 Project Highlights
+- **Feature Engineering**: Age, transaction time, day of week, and distance traveled.
+- **Geospatial Analysis**: Calculates distances between customer and merchant locations using latitude and longitude.
+- **Suspicious Travel Detection**: Flags implausible high-speed travel between transactions.
+- **Imbalanced Data Handling**: Uses SMOTE to address severe class imbalance.
+- **Modeling**: Random Forest and XGBoost for robust fraud classification.
+- **Threshold Optimization**: Precision-Recall curve based threshold selection for better F1-score.
 
-Geospatial Analysis: Distance between customer and merchant locations.
+## 🛠️ Tech Stack
+- **Python**
+- **Libraries**: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `geopy`, `xgboost`, `imbalanced-learn`
 
-Suspicious Travel Detection: Flags for high-speed travel suggesting possible fraud.
+## 📁 Dataset
+The data used for this project is stored locally and includes columns such as:
+- Transaction time and date
+- Customer and merchant geolocation
+- Transaction amount and category
+- Demographics (e.g., gender, date of birth)
 
-Imbalanced Data Handling: Uses SMOTE for oversampling minority (fraud) class.
+## 📊 Visualizations
+- Gender-based transaction distributions
+- Day-of-week transaction trends
+- Correlation matrix of engineered features
 
-Modeling:
+## 🚀 Getting Started
+1. Clone the repo:
+```bash
+git clone https://github.com/your-username/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Run the notebook or script to train and evaluate the model.
 
-Random Forest (with class balancing)
+## 📈 Performance Metrics
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
 
-XGBoost for improved accuracy and performance
+## 📌 Output
+The final model is evaluated using an optimized threshold derived from the precision-recall curve. A classification report is printed to assess its performance.
 
-Threshold Optimization: Precision-recall curve to select the best threshold based on F1-score.
+## 📬 Contact
+Created by **Ruwaida Al Harrasi** – feel free to reach out!
 
-📊 Evaluation Metrics:
-Precision
-
-Recall
-
-F1-Score
-
-ROC-AUC
-
-📈 Tools & Libraries:
-Python (Pandas, NumPy, Scikit-learn, imbalanced-learn, Geopy, Matplotlib, Seaborn, XGBoost)
+---
+Feel free to fork the repository or suggest improvements via pull requests!
